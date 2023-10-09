@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tic Tac Toe Game</title>
+        <link rel="icon" href="static/images/tic.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="static/css/style.css">
+    </head>
+    <body>
+        <!-- Start container -->
+        <div class="container">
+            <!-- Start game-con -->
+            <div class="game-con">
+                <!-- Start head -->
+                <div class="head">
+                    <h1>x o game</h1>
+                    <div class="players">
+                        <p class="player-x active">player x turn</p>
+                        <p class="player-o">player o turn</p>
+                    </div>
+                </div>
+                <!-- End head -->
+
+                <div class="boxes">
+                    <div class="square" id="box1" onclick="game(this.id)"></div>
+                    <div class="square" id="box2" onclick="game(this.id)"></div>
+                    <div class="square" id="box3" onclick="game(this.id)"></div>
+
+                    <div class="square" id="box4" onclick="game(this.id)"></div>
+                    <div class="square" id="box5" onclick="game(this.id)"></div>
+                    <div class="square" id="box6" onclick="game(this.id)"></div>
+
+                    <div class="square" id="box7" onclick="game(this.id)"></div>
+                    <div class="square" id="box8" onclick="game(this.id)"></div>
+                    <div class="square" id="box9" onclick="game(this.id)"></div>
+                </div>
+            </div>
+            <!-- End game-con -->
+        </div>
+        <!-- End container -->
+
+        <!-- Start celebrate -->
+        <div class="celebrate">
+            <div class="align">
+                <h2>winner</h2>
+                <img src="static/images/winner.gif" alt="winner-img">
+                <h4></h4>
+                <button>Reset</button>
+            </div>
+        </div>
+        <!-- End celebrate -->
+        <script src="static/js/index.js"></script>
+    </body>
+</html>
